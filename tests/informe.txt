@@ -1,0 +1,909 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 50.00      0.01     0.01     8779     0.00     0.00  std::__new_allocator<char>::~__new_allocator()
+ 50.00      0.01     0.01     8779     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::_Guard(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)
+  0.00      0.01     0.00   278344     0.00     0.00  Equipo::~Equipo()
+  0.00      0.01     0.00   262154     0.00     0.00  Equipo::Equipo(Equipo const&)
+  0.00      0.01     0.00   131172     0.00     0.00  Partido::~Partido()
+  0.00      0.01     0.00   123077     0.00     0.00  Partido::Partido(Partido const&)
+  0.00      0.01     0.00   112588     0.00     0.00  ArbolBinarioAVL<Partido>::calculateHeight(NodoArbolAVL<Partido>*)
+  0.00      0.01     0.00   100627     0.00     0.00  NodoArbolAVL<Partido>::getHeight()
+  0.00      0.01     0.00   100086     0.00     0.00  __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base() const
+  0.00      0.01     0.00    86876     0.00     0.00  NodoArbolAVL<Partido>::getRight() const
+  0.00      0.01     0.00    80688     0.00     0.00  Partido::getGolesTotales() const
+  0.00      0.01     0.00    70788     0.00     0.00  NodoArbolAVL<Partido>::getData() const
+  0.00      0.01     0.00    68360     0.00     0.00  NodoArbolAVL<Partido>::getLeft() const
+  0.00      0.01     0.00    53585     0.00     0.00  Fecha::getAnio() const
+  0.00      0.01     0.00    51080     0.00     0.00  Partido::getFecha() const
+  0.00      0.01     0.00    50043     0.00     0.00  bool __gnu_cxx::operator!=<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&)
+  0.00      0.01     0.00    46038     0.00     0.00  __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator++()
+  0.00      0.01     0.00    46038     0.00     0.00  __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator*() const
+  0.00      0.01     0.00    36043     0.00     0.00  Fecha::getMes() const
+  0.00      0.01     0.00    36001     0.00     0.00  Partido::operator>(Partido const&) const
+  0.00      0.01     0.00    34437     0.00     0.00  Partido::operator==(Partido const&) const
+  0.00      0.01     0.00    31369     0.00     0.00  Fecha::getDia() const
+  0.00      0.01     0.00    31135     0.00     0.00  NodoArbolAVL<Partido>::setHeight(int)
+  0.00      0.01     0.00    31135     0.00     0.00  ArbolBinarioAVL<Partido>::max(int, int)
+  0.00      0.01     0.00    26156     0.00     0.00  Fecha::operator>(Fecha const&) const
+  0.00      0.01     0.00    25159     0.00     0.00  ArbolBinarioAVL<Partido>::getBalance(NodoArbolAVL<Partido>*)
+  0.00      0.01     0.00    24629     0.00     0.00  Fecha::operator==(Fecha const&) const
+  0.00      0.01     0.00    22154     0.00     0.00  NodoArbolAVL<Partido>::setRight(NodoArbolAVL<Partido>*)
+  0.00      0.01     0.00    20000     0.00     0.00  int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)
+  0.00      0.01     0.00    20000     0.00     0.00  std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int)
+  0.00      0.01     0.00    20000     0.00     0.00  __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Range_chk::_S_chk(long, std::integral_constant<bool, true>)
+  0.00      0.01     0.00    20000     0.00     0.00  __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::_Save_errno()
+  0.00      0.01     0.00    20000     0.00     0.00  __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::~_Save_errno()
+  0.00      0.01     0.00    16285     0.00     0.00  Partido* std::__addressof<Partido>(Partido&)
+  0.00      0.01     0.00    13852     0.00     0.00  Equipo::Equipo(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      0.01     0.00    12771     0.00     0.00  std::__is_constant_evaluated()
+  0.00      0.01     0.00     9302     0.00     0.00  NodoArbolAVL<Partido>::setLeft(NodoArbolAVL<Partido>*)
+  0.00      0.01     0.00     8779     0.00     0.00  std::char_traits<char>::length(char const*)
+  0.00      0.01     0.00     8779     0.00     0.00  void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)
+  0.00      0.01     0.00     8779     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+  0.00      0.01     0.00     8779     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::~_Guard()
+  0.00      0.01     0.00     8190     0.00     0.00  Equipo::Equipo(Equipo&&)
+  0.00      0.01     0.00     8190     0.00     0.00  Partido&& std::forward<Partido>(std::remove_reference<Partido>::type&)
+  0.00      0.01     0.00     8095     0.00     0.00  operator new(unsigned long, void*)
+  0.00      0.01     0.00     8013     0.00     0.00  Partido const& std::forward<Partido const&>(std::remove_reference<Partido const&>::type&)
+  0.00      0.01     0.00     8002     0.00     0.00  __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::base() const
+  0.00      0.01     0.00     8000     0.00     0.00  std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+  0.00      0.01     0.00     6926     0.00     0.00  Fecha::Fecha(int, int, int)
+  0.00      0.01     0.00     5852     0.00     0.00  Equipo::operator=(Equipo const&)
+  0.00      0.01     0.00     4095     0.00     0.00  Partido::Partido(Partido&&)
+  0.00      0.01     0.00     4095     0.00     0.00  void std::__relocate_object_a<Partido, Partido, std::allocator<Partido> >(Partido*, Partido*, std::allocator<Partido>&)
+  0.00      0.01     0.00     4095     0.00     0.00  std::remove_reference<Partido&>::type&& std::move<Partido&>(Partido&)
+  0.00      0.01     0.00     4015     0.00     0.00  ArbolBinarioAVL<Partido>::~ArbolBinarioAVL()
+  0.00      0.01     0.00     4005     0.00     0.00  ServicioPartidoTree::hashCompeticion(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+  0.00      0.01     0.00     4001     0.00     0.00  bool __gnu_cxx::operator!=<Partido const*, std::vector<Partido, std::allocator<Partido> > >(__gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > > const&, __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > > const&)
+  0.00      0.01     0.00     4000     0.00     0.00  ArbolBinarioAVL<Partido>::put(Partido)
+  0.00      0.01     0.00     4000     0.00     0.00  ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*)
+  0.00      0.01     0.00     4000     0.00     0.00  ServicioPartidoTree::registrarPartidoEnHash(Partido)
+  0.00      0.01     0.00     4000     0.00     0.00  HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+  0.00      0.01     0.00     4000     0.00     0.00  Partido::Partido(Equipo, Equipo, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Fecha)
+  0.00      0.01     0.00     4000     0.00     0.00  __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::operator++()
+  0.00      0.01     0.00     4000     0.00     0.00  Partido::getLiga[abi:cxx11]() const
+  0.00      0.01     0.00     4000     0.00     0.00  __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::operator*() const
+  0.00      0.01     0.00     4000     0.00     0.00  std::vector<Partido, std::allocator<Partido> >::push_back(Partido const&)
+  0.00      0.01     0.00     4000     0.00     0.00  void std::_Destroy<Partido>(Partido*)
+  0.00      0.01     0.00     3995     0.00     0.00  HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::getClave()
+  0.00      0.01     0.00     3995     0.00     0.00  HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::getValor()
+  0.00      0.01     0.00     3995     0.00     0.00  std::char_traits<char>::compare(char const*, char const*, unsigned long)
+  0.00      0.01     0.00     3995     0.00     0.00  bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      0.01     0.00     2926     0.00     0.00  NodoArbolAVL<Partido>::NodoArbolAVL(Partido)
+  0.00      0.01     0.00     2926     0.00     0.00  Partido::Partido()
+  0.00      0.01     0.00     2926     0.00     0.00  Partido::operator=(Partido const&)
+  0.00      0.01     0.00     2638     0.00     0.00  ArbolBinarioAVL<Partido>::rotacionIzquierda(NodoArbolAVL<Partido>*)
+  0.00      0.01     0.00      350     0.00     0.00  ArbolBinarioAVL<Partido>::rotacionDerecha(NodoArbolAVL<Partido>*)
+  0.00      0.01     0.00      350     0.00     0.00  Partido::operator<(Partido const&) const
+  0.00      0.01     0.00      295     0.00     0.00  Fecha::operator<(Fecha const&) const
+  0.00      0.01     0.00       78     0.00     0.00  Partido* std::__niter_base<Partido*>(Partido*)
+  0.00      0.01     0.00       52     0.00     0.00  __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::base() const
+  0.00      0.01     0.00       52     0.00     0.00  std::vector<Partido, std::allocator<Partido> >::size() const
+  0.00      0.01     0.00       27     0.00     0.00  std::_Vector_base<Partido, std::allocator<Partido> >::_M_get_Tp_allocator()
+  0.00      0.01     0.00       26     0.00     0.00  __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::__normal_iterator(Partido* const&)
+  0.00      0.01     0.00       26     0.00     0.00  std::_Vector_base<Partido, std::allocator<Partido> >::_M_get_Tp_allocator() const
+  0.00      0.01     0.00       26     0.00     0.00  std::vector<Partido, std::allocator<Partido> >::max_size() const
+  0.00      0.01     0.00       26     0.00     0.00  std::vector<Partido, std::allocator<Partido> >::_S_max_size(std::allocator<Partido> const&)
+  0.00      0.01     0.00       26     0.00     0.00  std::vector<Partido, std::allocator<Partido> >::_S_relocate(Partido*, Partido*, Partido*, std::allocator<Partido>&)
+  0.00      0.01     0.00       26     0.00     0.00  Partido* std::__relocate_a<Partido*, Partido*, std::allocator<Partido> >(Partido*, Partido*, Partido*, std::allocator<Partido>&)
+  0.00      0.01     0.00       26     0.00     0.00  Partido* std::__relocate_a_1<Partido*, Partido*, std::allocator<Partido> >(Partido*, Partido*, Partido*, std::allocator<Partido>&)
+  0.00      0.01     0.00       26     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.01     0.00       14     0.00     0.00  std::_Vector_base<Partido, std::allocator<Partido> >::_M_deallocate(Partido*, unsigned long)
+  0.00      0.01     0.00       13     0.00     0.00  __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::difference_type __gnu_cxx::operator-<Partido*, std::vector<Partido, std::allocator<Partido> > >(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > > const&, __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > > const&)
+  0.00      0.01     0.00       13     0.00     0.00  std::vector<Partido, std::allocator<Partido> >::_M_check_len(unsigned long, char const*) const
+  0.00      0.01     0.00       13     0.00     0.00  std::_Vector_base<Partido, std::allocator<Partido> >::_M_allocate(unsigned long)
+  0.00      0.01     0.00       13     0.00     0.00  std::__new_allocator<Partido>::deallocate(Partido*, unsigned long)
+  0.00      0.01     0.00       13     0.00     0.00  std::__new_allocator<Partido>::allocate(unsigned long, void const*)
+  0.00      0.01     0.00       13     0.00     0.00  void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&)
+  0.00      0.01     0.00       13     0.00     0.00  std::vector<Partido, std::allocator<Partido> >::end()
+  0.00      0.01     0.00       13     0.00     0.00  std::vector<Partido, std::allocator<Partido> >::begin()
+  0.00      0.01     0.00       13     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.01     0.00       10     0.00     0.00  ArbolBinarioAVL<Partido>::ArbolBinarioAVL()
+  0.00      0.01     0.00        5     0.00     0.00  HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::put(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido>)
+  0.00      0.01     0.00        5     0.00     0.00  HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::HashEntry(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido>)
+  0.00      0.01     0.00        5     0.00     0.00  HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::~HashEntry()
+  0.00      0.01     0.00        2     0.00     0.00  __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::__normal_iterator(Partido const* const&)
+  0.00      0.01     0.00        1     0.00    10.00  registrarPartidosEnServicio(std::vector<Partido, std::allocator<Partido> > const&, ServicioPartidoTree&)
+  0.00      0.01     0.00        1     0.00     0.00  leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      0.01     0.00        1     0.00     0.00  ServicioPartidoTree::ServicioPartidoTree(unsigned int)
+  0.00      0.01     0.00        1     0.00     0.00  ServicioPartidoTree::~ServicioPartidoTree()
+  0.00      0.01     0.00        1     0.00     0.00  HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::HashMap(unsigned int, unsigned int (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >))
+  0.00      0.01     0.00        1     0.00     0.00  HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::~HashMap()
+  0.00      0.01     0.00        1     0.00     0.00  std::vector<Partido, std::allocator<Partido> >::end() const
+  0.00      0.01     0.00        1     0.00     0.00  std::vector<Partido, std::allocator<Partido> >::begin() const
+  0.00      0.01     0.00        1     0.00     0.00  void std::_Destroy_aux<false>::__destroy<Partido*>(Partido*, Partido*)
+  0.00      0.01     0.00        1     0.00     0.00  std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl::_Vector_impl()
+  0.00      0.01     0.00        1     0.00     0.00  std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl::~_Vector_impl()
+  0.00      0.01     0.00        1     0.00     0.00  std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl_data::_Vector_impl_data()
+  0.00      0.01     0.00        1     0.00     0.00  std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_base()
+  0.00      0.01     0.00        1     0.00     0.00  std::_Vector_base<Partido, std::allocator<Partido> >::~_Vector_base()
+  0.00      0.01     0.00        1     0.00     0.00  std::__new_allocator<Partido>::~__new_allocator()
+  0.00      0.01     0.00        1     0.00     0.00  std::vector<Partido, std::allocator<Partido> >::vector()
+  0.00      0.01     0.00        1     0.00     0.00  std::vector<Partido, std::allocator<Partido> >::~vector()
+  0.00      0.01     0.00        1     0.00     0.00  void std::_Destroy<Partido*>(Partido*, Partido*)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 100.00% of 0.01 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.01                 main [1]
+                0.00    0.01       1/1           registrarPartidosEnServicio(std::vector<Partido, std::allocator<Partido> > const&, ServicioPartidoTree&) [7]
+                0.00    0.00       1/8779        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [10]
+                0.00    0.00       1/8779        std::__new_allocator<char>::~__new_allocator() [8]
+                0.00    0.00       1/1           leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [112]
+                0.00    0.00       1/1           ServicioPartidoTree::ServicioPartidoTree(unsigned int) [113]
+                0.00    0.00       1/1           ServicioPartidoTree::~ServicioPartidoTree() [114]
+                0.00    0.00       1/1           std::vector<Partido, std::allocator<Partido> >::~vector() [127]
+-----------------------------------------------
+                0.00    0.01    4000/4000        ServicioPartidoTree::registrarPartidoEnHash(Partido) [4]
+[2]    100.0    0.00    0.01    4000         ArbolBinarioAVL<Partido>::put(Partido) [2]
+                0.00    0.01    4000/4000        ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+                0.00    0.00    4000/123077      Partido::Partido(Partido const&) [21]
+                0.00    0.00    4000/131172      Partido::~Partido() [20]
+-----------------------------------------------
+                               33363             ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+                0.00    0.01    4000/4000        ArbolBinarioAVL<Partido>::put(Partido) [2]
+[3]    100.0    0.00    0.01    4000+33363   ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+                0.00    0.01    2926/2926        NodoArbolAVL<Partido>::NodoArbolAVL(Partido) [5]
+                0.00    0.00  107077/131172      Partido::~Partido() [20]
+                0.00    0.00   70788/70788       NodoArbolAVL<Partido>::getData() const [27]
+                0.00    0.00   52753/86876       NodoArbolAVL<Partido>::getRight() const [25]
+                0.00    0.00   50318/112588      ArbolBinarioAVL<Partido>::calculateHeight(NodoArbolAVL<Partido>*) [22]
+                0.00    0.00   36289/123077      Partido::Partido(Partido const&) [21]
+                0.00    0.00   36001/36001       Partido::operator>(Partido const&) const [35]
+                0.00    0.00   34437/34437       Partido::operator==(Partido const&) const [36]
+                0.00    0.00   34237/68360       NodoArbolAVL<Partido>::getLeft() const [28]
+                0.00    0.00   25159/31135       NodoArbolAVL<Partido>::setHeight(int) [38]
+                0.00    0.00   25159/31135       ArbolBinarioAVL<Partido>::max(int, int) [39]
+                0.00    0.00   25159/25159       ArbolBinarioAVL<Partido>::getBalance(NodoArbolAVL<Partido>*) [41]
+                0.00    0.00   19166/22154       NodoArbolAVL<Partido>::setRight(NodoArbolAVL<Partido>*) [43]
+                0.00    0.00    6314/9302        NodoArbolAVL<Partido>::setLeft(NodoArbolAVL<Partido>*) [52]
+                0.00    0.00    2638/2638        ArbolBinarioAVL<Partido>::rotacionIzquierda(NodoArbolAVL<Partido>*) [81]
+                0.00    0.00     350/350         Partido::operator<(Partido const&) const [83]
+                0.00    0.00     350/350         ArbolBinarioAVL<Partido>::rotacionDerecha(NodoArbolAVL<Partido>*) [82]
+                               33363             ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+-----------------------------------------------
+                0.00    0.01    4000/4000        registrarPartidosEnServicio(std::vector<Partido, std::allocator<Partido> > const&, ServicioPartidoTree&) [7]
+[4]    100.0    0.00    0.01    4000         ServicioPartidoTree::registrarPartidoEnHash(Partido) [4]
+                0.00    0.01    4000/4000        ArbolBinarioAVL<Partido>::put(Partido) [2]
+                0.00    0.00    4005/4015        ArbolBinarioAVL<Partido>::~ArbolBinarioAVL() [66]
+                0.00    0.00    4000/4000        Partido::getLiga[abi:cxx11]() const [72]
+                0.00    0.00    4000/4000        HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [69]
+                0.00    0.00    4000/123077      Partido::Partido(Partido const&) [21]
+                0.00    0.00    4000/131172      Partido::~Partido() [20]
+                0.00    0.00       5/10          ArbolBinarioAVL<Partido>::ArbolBinarioAVL() [107]
+                0.00    0.00       5/5           HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::put(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido>) [108]
+-----------------------------------------------
+                0.00    0.01    2926/2926        ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[5]    100.0    0.00    0.01    2926         NodoArbolAVL<Partido>::NodoArbolAVL(Partido) [5]
+                0.00    0.01    2926/2926        Partido::Partido() [6]
+                0.00    0.00    2926/2926        Partido::operator=(Partido const&) [80]
+-----------------------------------------------
+                0.00    0.01    2926/2926        NodoArbolAVL<Partido>::NodoArbolAVL(Partido) [5]
+[6]    100.0    0.00    0.01    2926         Partido::Partido() [6]
+                0.00    0.00    8778/8779        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [10]
+                0.00    0.00    8778/8779        std::__new_allocator<char>::~__new_allocator() [8]
+                0.00    0.00    5852/13852       Equipo::Equipo(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [50]
+                0.00    0.00    2926/6926        Fecha::Fecha(int, int, int) [61]
+-----------------------------------------------
+                0.00    0.01       1/1           main [1]
+[7]    100.0    0.00    0.01       1         registrarPartidosEnServicio(std::vector<Partido, std::allocator<Partido> > const&, ServicioPartidoTree&) [7]
+                0.00    0.01    4000/4000        ServicioPartidoTree::registrarPartidoEnHash(Partido) [4]
+                0.00    0.00    4001/4001        bool __gnu_cxx::operator!=<Partido const*, std::vector<Partido, std::allocator<Partido> > >(__gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > > const&, __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > > const&) [68]
+                0.00    0.00    4000/4000        __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::operator*() const [73]
+                0.00    0.00    4000/123077      Partido::Partido(Partido const&) [21]
+                0.00    0.00    4000/131172      Partido::~Partido() [20]
+                0.00    0.00    4000/4000        __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::operator++() [71]
+                0.00    0.00       1/1           std::vector<Partido, std::allocator<Partido> >::begin() const [118]
+                0.00    0.00       1/1           std::vector<Partido, std::allocator<Partido> >::end() const [117]
+-----------------------------------------------
+                0.00    0.00       1/8779        main [1]
+                0.00    0.00    8778/8779        Partido::Partido() [6]
+[8]     50.0    0.01    0.00    8779         std::__new_allocator<char>::~__new_allocator() [8]
+-----------------------------------------------
+                0.00    0.01    8779/8779        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [10]
+[9]     50.0    0.00    0.01    8779         void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [9]
+                0.01    0.00    8779/8779        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::_Guard(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*) [11]
+                0.00    0.00    8779/8779        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::~_Guard() [54]
+-----------------------------------------------
+                0.00    0.00       1/8779        main [1]
+                0.00    0.00    8778/8779        Partido::Partido() [6]
+[10]    50.0    0.00    0.01    8779         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [10]
+                0.00    0.01    8779/8779        void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [9]
+                0.00    0.00    8779/8779        std::char_traits<char>::length(char const*) [53]
+-----------------------------------------------
+                0.01    0.00    8779/8779        void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [9]
+[11]    50.0    0.01    0.00    8779         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::_Guard(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*) [11]
+-----------------------------------------------
+                0.00    0.00   16000/278344      leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [112]
+                0.00    0.00  262344/278344      Partido::~Partido() [20]
+[18]     0.0    0.00    0.00  278344         Equipo::~Equipo() [18]
+-----------------------------------------------
+                0.00    0.00    8000/262154      leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [112]
+                0.00    0.00    8000/262154      Partido::Partido(Equipo, Equipo, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Fecha) [70]
+                0.00    0.00  246154/262154      Partido::Partido(Partido const&) [21]
+[19]     0.0    0.00    0.00  262154         Equipo::Equipo(Equipo const&) [19]
+-----------------------------------------------
+                0.00    0.00    4000/131172      leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [112]
+                0.00    0.00    4000/131172      registrarPartidosEnServicio(std::vector<Partido, std::allocator<Partido> > const&, ServicioPartidoTree&) [7]
+                0.00    0.00    4000/131172      ServicioPartidoTree::registrarPartidoEnHash(Partido) [4]
+                0.00    0.00    4000/131172      ArbolBinarioAVL<Partido>::put(Partido) [2]
+                0.00    0.00    4000/131172      void std::_Destroy<Partido>(Partido*) [75]
+                0.00    0.00    4095/131172      void std::__relocate_object_a<Partido, Partido, std::allocator<Partido> >(Partido*, Partido*, std::allocator<Partido>&) [64]
+                0.00    0.00  107077/131172      ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[20]     0.0    0.00    0.00  131172         Partido::~Partido() [20]
+                0.00    0.00  262344/278344      Equipo::~Equipo() [18]
+-----------------------------------------------
+                0.00    0.00      13/123077      void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+                0.00    0.00    3987/123077      std::vector<Partido, std::allocator<Partido> >::push_back(Partido const&) [74]
+                0.00    0.00    4000/123077      registrarPartidosEnServicio(std::vector<Partido, std::allocator<Partido> > const&, ServicioPartidoTree&) [7]
+                0.00    0.00    4000/123077      ServicioPartidoTree::registrarPartidoEnHash(Partido) [4]
+                0.00    0.00    4000/123077      ArbolBinarioAVL<Partido>::put(Partido) [2]
+                0.00    0.00   36289/123077      ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+                0.00    0.00   70788/123077      NodoArbolAVL<Partido>::getData() const [27]
+[21]     0.0    0.00    0.00  123077         Partido::Partido(Partido const&) [21]
+                0.00    0.00  246154/262154      Equipo::Equipo(Equipo const&) [19]
+-----------------------------------------------
+                0.00    0.00    1400/112588      ArbolBinarioAVL<Partido>::rotacionDerecha(NodoArbolAVL<Partido>*) [82]
+                0.00    0.00   10552/112588      ArbolBinarioAVL<Partido>::rotacionIzquierda(NodoArbolAVL<Partido>*) [81]
+                0.00    0.00   50318/112588      ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+                0.00    0.00   50318/112588      ArbolBinarioAVL<Partido>::getBalance(NodoArbolAVL<Partido>*) [41]
+[22]     0.0    0.00    0.00  112588         ArbolBinarioAVL<Partido>::calculateHeight(NodoArbolAVL<Partido>*) [22]
+                0.00    0.00  100627/100627      NodoArbolAVL<Partido>::getHeight() [23]
+-----------------------------------------------
+                0.00    0.00  100627/100627      ArbolBinarioAVL<Partido>::calculateHeight(NodoArbolAVL<Partido>*) [22]
+[23]     0.0    0.00    0.00  100627         NodoArbolAVL<Partido>::getHeight() [23]
+-----------------------------------------------
+                0.00    0.00  100086/100086      bool __gnu_cxx::operator!=<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [31]
+[24]     0.0    0.00    0.00  100086         __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base() const [24]
+-----------------------------------------------
+                0.00    0.00    1050/86876       ArbolBinarioAVL<Partido>::rotacionDerecha(NodoArbolAVL<Partido>*) [82]
+                0.00    0.00    7914/86876       ArbolBinarioAVL<Partido>::rotacionIzquierda(NodoArbolAVL<Partido>*) [81]
+                0.00    0.00   25159/86876       ArbolBinarioAVL<Partido>::getBalance(NodoArbolAVL<Partido>*) [41]
+                0.00    0.00   52753/86876       ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[25]     0.0    0.00    0.00   86876         NodoArbolAVL<Partido>::getRight() const [25]
+-----------------------------------------------
+                0.00    0.00     405/80688       Partido::operator<(Partido const&) const [83]
+                0.00    0.00   34437/80688       Partido::operator==(Partido const&) const [36]
+                0.00    0.00   45846/80688       Partido::operator>(Partido const&) const [35]
+[26]     0.0    0.00    0.00   80688         Partido::getGolesTotales() const [26]
+-----------------------------------------------
+                0.00    0.00   70788/70788       ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[27]     0.0    0.00    0.00   70788         NodoArbolAVL<Partido>::getData() const [27]
+                0.00    0.00   70788/123077      Partido::Partido(Partido const&) [21]
+-----------------------------------------------
+                0.00    0.00    1050/68360       ArbolBinarioAVL<Partido>::rotacionDerecha(NodoArbolAVL<Partido>*) [82]
+                0.00    0.00    7914/68360       ArbolBinarioAVL<Partido>::rotacionIzquierda(NodoArbolAVL<Partido>*) [81]
+                0.00    0.00   25159/68360       ArbolBinarioAVL<Partido>::getBalance(NodoArbolAVL<Partido>*) [41]
+                0.00    0.00   34237/68360       ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[28]     0.0    0.00    0.00   68360         NodoArbolAVL<Partido>::getLeft() const [28]
+-----------------------------------------------
+                0.00    0.00     590/53585       Fecha::operator<(Fecha const&) const [84]
+                0.00    0.00    1102/53585       Fecha::operator==(Fecha const&) const [42]
+                0.00    0.00   51893/53585       Fecha::operator>(Fecha const&) const [40]
+[29]     0.0    0.00    0.00   53585         Fecha::getAnio() const [29]
+-----------------------------------------------
+                0.00    0.00     295/51080       Partido::operator<(Partido const&) const [83]
+                0.00    0.00   24629/51080       Partido::operator==(Partido const&) const [36]
+                0.00    0.00   26156/51080       Partido::operator>(Partido const&) const [35]
+[30]     0.0    0.00    0.00   51080         Partido::getFecha() const [30]
+-----------------------------------------------
+                0.00    0.00   50043/50043       ServicioPartidoTree::hashCompeticion(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [67]
+[31]     0.0    0.00    0.00   50043         bool __gnu_cxx::operator!=<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [31]
+                0.00    0.00  100086/100086      __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base() const [24]
+-----------------------------------------------
+                0.00    0.00   46038/46038       ServicioPartidoTree::hashCompeticion(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [67]
+[32]     0.0    0.00    0.00   46038         __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator++() [32]
+-----------------------------------------------
+                0.00    0.00   46038/46038       ServicioPartidoTree::hashCompeticion(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [67]
+[33]     0.0    0.00    0.00   46038         __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator*() const [33]
+-----------------------------------------------
+                0.00    0.00     530/36043       Fecha::operator<(Fecha const&) const [84]
+                0.00    0.00    1545/36043       Fecha::operator==(Fecha const&) const [42]
+                0.00    0.00   33968/36043       Fecha::operator>(Fecha const&) const [40]
+[34]     0.0    0.00    0.00   36043         Fecha::getMes() const [34]
+-----------------------------------------------
+                0.00    0.00   36001/36001       ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[35]     0.0    0.00    0.00   36001         Partido::operator>(Partido const&) const [35]
+                0.00    0.00   45846/80688       Partido::getGolesTotales() const [26]
+                0.00    0.00   26156/51080       Partido::getFecha() const [30]
+                0.00    0.00   26156/26156       Fecha::operator>(Fecha const&) const [40]
+-----------------------------------------------
+                0.00    0.00   34437/34437       ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[36]     0.0    0.00    0.00   34437         Partido::operator==(Partido const&) const [36]
+                0.00    0.00   34437/80688       Partido::getGolesTotales() const [26]
+                0.00    0.00   24629/51080       Partido::getFecha() const [30]
+                0.00    0.00   24629/24629       Fecha::operator==(Fecha const&) const [42]
+-----------------------------------------------
+                0.00    0.00     138/31369       Fecha::operator<(Fecha const&) const [84]
+                0.00    0.00    6602/31369       Fecha::operator>(Fecha const&) const [40]
+                0.00    0.00   24629/31369       Fecha::operator==(Fecha const&) const [42]
+[37]     0.0    0.00    0.00   31369         Fecha::getDia() const [37]
+-----------------------------------------------
+                0.00    0.00     700/31135       ArbolBinarioAVL<Partido>::rotacionDerecha(NodoArbolAVL<Partido>*) [82]
+                0.00    0.00    5276/31135       ArbolBinarioAVL<Partido>::rotacionIzquierda(NodoArbolAVL<Partido>*) [81]
+                0.00    0.00   25159/31135       ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[38]     0.0    0.00    0.00   31135         NodoArbolAVL<Partido>::setHeight(int) [38]
+-----------------------------------------------
+                0.00    0.00     700/31135       ArbolBinarioAVL<Partido>::rotacionDerecha(NodoArbolAVL<Partido>*) [82]
+                0.00    0.00    5276/31135       ArbolBinarioAVL<Partido>::rotacionIzquierda(NodoArbolAVL<Partido>*) [81]
+                0.00    0.00   25159/31135       ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[39]     0.0    0.00    0.00   31135         ArbolBinarioAVL<Partido>::max(int, int) [39]
+-----------------------------------------------
+                0.00    0.00   26156/26156       Partido::operator>(Partido const&) const [35]
+[40]     0.0    0.00    0.00   26156         Fecha::operator>(Fecha const&) const [40]
+                0.00    0.00   51893/53585       Fecha::getAnio() const [29]
+                0.00    0.00   33968/36043       Fecha::getMes() const [34]
+                0.00    0.00    6602/31369       Fecha::getDia() const [37]
+-----------------------------------------------
+                0.00    0.00   25159/25159       ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[41]     0.0    0.00    0.00   25159         ArbolBinarioAVL<Partido>::getBalance(NodoArbolAVL<Partido>*) [41]
+                0.00    0.00   50318/112588      ArbolBinarioAVL<Partido>::calculateHeight(NodoArbolAVL<Partido>*) [22]
+                0.00    0.00   25159/68360       NodoArbolAVL<Partido>::getLeft() const [28]
+                0.00    0.00   25159/86876       NodoArbolAVL<Partido>::getRight() const [25]
+-----------------------------------------------
+                0.00    0.00   24629/24629       Partido::operator==(Partido const&) const [36]
+[42]     0.0    0.00    0.00   24629         Fecha::operator==(Fecha const&) const [42]
+                0.00    0.00   24629/31369       Fecha::getDia() const [37]
+                0.00    0.00    1545/36043       Fecha::getMes() const [34]
+                0.00    0.00    1102/53585       Fecha::getAnio() const [29]
+-----------------------------------------------
+                0.00    0.00     350/22154       ArbolBinarioAVL<Partido>::rotacionDerecha(NodoArbolAVL<Partido>*) [82]
+                0.00    0.00    2638/22154       ArbolBinarioAVL<Partido>::rotacionIzquierda(NodoArbolAVL<Partido>*) [81]
+                0.00    0.00   19166/22154       ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[43]     0.0    0.00    0.00   22154         NodoArbolAVL<Partido>::setRight(NodoArbolAVL<Partido>*) [43]
+-----------------------------------------------
+                0.00    0.00   20000/20000       std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int) [45]
+[44]     0.0    0.00    0.00   20000         int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [44]
+                0.00    0.00   20000/20000       __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::_Save_errno() [47]
+                0.00    0.00   20000/20000       __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Range_chk::_S_chk(long, std::integral_constant<bool, true>) [46]
+                0.00    0.00   20000/20000       __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::~_Save_errno() [48]
+-----------------------------------------------
+                0.00    0.00   20000/20000       leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [112]
+[45]     0.0    0.00    0.00   20000         std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int) [45]
+                0.00    0.00   20000/20000       int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [44]
+-----------------------------------------------
+                0.00    0.00   20000/20000       int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [44]
+[46]     0.0    0.00    0.00   20000         __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Range_chk::_S_chk(long, std::integral_constant<bool, true>) [46]
+-----------------------------------------------
+                0.00    0.00   20000/20000       int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [44]
+[47]     0.0    0.00    0.00   20000         __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::_Save_errno() [47]
+-----------------------------------------------
+                0.00    0.00   20000/20000       int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [44]
+[48]     0.0    0.00    0.00   20000         __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::~_Save_errno() [48]
+-----------------------------------------------
+                0.00    0.00    4000/16285       void std::_Destroy_aux<false>::__destroy<Partido*>(Partido*, Partido*) [119]
+                0.00    0.00    4095/16285       void std::__relocate_object_a<Partido, Partido, std::allocator<Partido> >(Partido*, Partido*, std::allocator<Partido>&) [64]
+                0.00    0.00    8190/16285       Partido* std::__relocate_a_1<Partido*, Partido*, std::allocator<Partido> >(Partido*, Partido*, Partido*, std::allocator<Partido>&) [95]
+[49]     0.0    0.00    0.00   16285         Partido* std::__addressof<Partido>(Partido&) [49]
+-----------------------------------------------
+                0.00    0.00    5852/13852       Partido::Partido() [6]
+                0.00    0.00    8000/13852       leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [112]
+[50]     0.0    0.00    0.00   13852         Equipo::Equipo(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [50]
+-----------------------------------------------
+                0.00    0.00    3992/12771       std::char_traits<char>::compare(char const*, char const*, unsigned long) [78]
+                0.00    0.00    8779/12771       std::char_traits<char>::length(char const*) [53]
+[51]     0.0    0.00    0.00   12771         std::__is_constant_evaluated() [51]
+-----------------------------------------------
+                0.00    0.00     350/9302        ArbolBinarioAVL<Partido>::rotacionDerecha(NodoArbolAVL<Partido>*) [82]
+                0.00    0.00    2638/9302        ArbolBinarioAVL<Partido>::rotacionIzquierda(NodoArbolAVL<Partido>*) [81]
+                0.00    0.00    6314/9302        ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[52]     0.0    0.00    0.00    9302         NodoArbolAVL<Partido>::setLeft(NodoArbolAVL<Partido>*) [52]
+-----------------------------------------------
+                0.00    0.00    8779/8779        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [10]
+[53]     0.0    0.00    0.00    8779         std::char_traits<char>::length(char const*) [53]
+                0.00    0.00    8779/12771       std::__is_constant_evaluated() [51]
+-----------------------------------------------
+                0.00    0.00    8779/8779        void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [9]
+[54]     0.0    0.00    0.00    8779         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::~_Guard() [54]
+-----------------------------------------------
+                0.00    0.00    8190/8190        Partido::Partido(Partido&&) [63]
+[55]     0.0    0.00    0.00    8190         Equipo::Equipo(Equipo&&) [55]
+-----------------------------------------------
+                0.00    0.00    8190/8190        void std::__relocate_object_a<Partido, Partido, std::allocator<Partido> >(Partido*, Partido*, std::allocator<Partido>&) [64]
+[56]     0.0    0.00    0.00    8190         Partido&& std::forward<Partido>(std::remove_reference<Partido>::type&) [56]
+-----------------------------------------------
+                0.00    0.00      13/8095        void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+                0.00    0.00    3987/8095        std::vector<Partido, std::allocator<Partido> >::push_back(Partido const&) [74]
+                0.00    0.00    4095/8095        void std::__relocate_object_a<Partido, Partido, std::allocator<Partido> >(Partido*, Partido*, std::allocator<Partido>&) [64]
+[57]     0.0    0.00    0.00    8095         operator new(unsigned long, void*) [57]
+-----------------------------------------------
+                0.00    0.00      39/8013        void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+                0.00    0.00    7974/8013        std::vector<Partido, std::allocator<Partido> >::push_back(Partido const&) [74]
+[58]     0.0    0.00    0.00    8013         Partido const& std::forward<Partido const&>(std::remove_reference<Partido const&>::type&) [58]
+-----------------------------------------------
+                0.00    0.00    8002/8002        bool __gnu_cxx::operator!=<Partido const*, std::vector<Partido, std::allocator<Partido> > >(__gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > > const&, __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > > const&) [68]
+[59]     0.0    0.00    0.00    8002         __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::base() const [59]
+-----------------------------------------------
+                0.00    0.00    8000/8000        leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [112]
+[60]     0.0    0.00    0.00    8000         std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [60]
+-----------------------------------------------
+                0.00    0.00    2926/6926        Partido::Partido() [6]
+                0.00    0.00    4000/6926        leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [112]
+[61]     0.0    0.00    0.00    6926         Fecha::Fecha(int, int, int) [61]
+-----------------------------------------------
+                0.00    0.00    5852/5852        Partido::operator=(Partido const&) [80]
+[62]     0.0    0.00    0.00    5852         Equipo::operator=(Equipo const&) [62]
+-----------------------------------------------
+                0.00    0.00    4095/4095        void std::__relocate_object_a<Partido, Partido, std::allocator<Partido> >(Partido*, Partido*, std::allocator<Partido>&) [64]
+[63]     0.0    0.00    0.00    4095         Partido::Partido(Partido&&) [63]
+                0.00    0.00    8190/8190        Equipo::Equipo(Equipo&&) [55]
+-----------------------------------------------
+                0.00    0.00    4095/4095        Partido* std::__relocate_a_1<Partido*, Partido*, std::allocator<Partido> >(Partido*, Partido*, Partido*, std::allocator<Partido>&) [95]
+[64]     0.0    0.00    0.00    4095         void std::__relocate_object_a<Partido, Partido, std::allocator<Partido> >(Partido*, Partido*, std::allocator<Partido>&) [64]
+                0.00    0.00    8190/8190        Partido&& std::forward<Partido>(std::remove_reference<Partido>::type&) [56]
+                0.00    0.00    4095/4095        std::remove_reference<Partido&>::type&& std::move<Partido&>(Partido&) [65]
+                0.00    0.00    4095/8095        operator new(unsigned long, void*) [57]
+                0.00    0.00    4095/16285       Partido* std::__addressof<Partido>(Partido&) [49]
+                0.00    0.00    4095/4095        Partido::Partido(Partido&&) [63]
+                0.00    0.00    4095/131172      Partido::~Partido() [20]
+-----------------------------------------------
+                0.00    0.00    4095/4095        void std::__relocate_object_a<Partido, Partido, std::allocator<Partido> >(Partido*, Partido*, std::allocator<Partido>&) [64]
+[65]     0.0    0.00    0.00    4095         std::remove_reference<Partido&>::type&& std::move<Partido&>(Partido&) [65]
+-----------------------------------------------
+                0.00    0.00       5/4015        HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::~HashEntry() [110]
+                0.00    0.00       5/4015        HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::put(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido>) [108]
+                0.00    0.00    4005/4015        ServicioPartidoTree::registrarPartidoEnHash(Partido) [4]
+[66]     0.0    0.00    0.00    4015         ArbolBinarioAVL<Partido>::~ArbolBinarioAVL() [66]
+-----------------------------------------------
+                0.00    0.00       5/4005        HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::put(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido>) [108]
+                0.00    0.00    4000/4005        HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [69]
+[67]     0.0    0.00    0.00    4005         ServicioPartidoTree::hashCompeticion(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [67]
+                0.00    0.00   50043/50043       bool __gnu_cxx::operator!=<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [31]
+                0.00    0.00   46038/46038       __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator*() const [33]
+                0.00    0.00   46038/46038       __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator++() [32]
+-----------------------------------------------
+                0.00    0.00    4001/4001        registrarPartidosEnServicio(std::vector<Partido, std::allocator<Partido> > const&, ServicioPartidoTree&) [7]
+[68]     0.0    0.00    0.00    4001         bool __gnu_cxx::operator!=<Partido const*, std::vector<Partido, std::allocator<Partido> > >(__gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > > const&, __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > > const&) [68]
+                0.00    0.00    8002/8002        __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::base() const [59]
+-----------------------------------------------
+                0.00    0.00    4000/4000        ServicioPartidoTree::registrarPartidoEnHash(Partido) [4]
+[69]     0.0    0.00    0.00    4000         HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [69]
+                0.00    0.00    4000/4005        ServicioPartidoTree::hashCompeticion(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [67]
+                0.00    0.00    3995/3995        HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::getClave() [76]
+                0.00    0.00    3995/3995        bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [79]
+                0.00    0.00    3995/3995        HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::getValor() [77]
+-----------------------------------------------
+                0.00    0.00    4000/4000        leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [112]
+[70]     0.0    0.00    0.00    4000         Partido::Partido(Equipo, Equipo, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Fecha) [70]
+                0.00    0.00    8000/262154      Equipo::Equipo(Equipo const&) [19]
+-----------------------------------------------
+                0.00    0.00    4000/4000        registrarPartidosEnServicio(std::vector<Partido, std::allocator<Partido> > const&, ServicioPartidoTree&) [7]
+[71]     0.0    0.00    0.00    4000         __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::operator++() [71]
+-----------------------------------------------
+                0.00    0.00    4000/4000        ServicioPartidoTree::registrarPartidoEnHash(Partido) [4]
+[72]     0.0    0.00    0.00    4000         Partido::getLiga[abi:cxx11]() const [72]
+-----------------------------------------------
+                0.00    0.00    4000/4000        registrarPartidosEnServicio(std::vector<Partido, std::allocator<Partido> > const&, ServicioPartidoTree&) [7]
+[73]     0.0    0.00    0.00    4000         __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::operator*() const [73]
+-----------------------------------------------
+                0.00    0.00    4000/4000        leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [112]
+[74]     0.0    0.00    0.00    4000         std::vector<Partido, std::allocator<Partido> >::push_back(Partido const&) [74]
+                0.00    0.00    7974/8013        Partido const& std::forward<Partido const&>(std::remove_reference<Partido const&>::type&) [58]
+                0.00    0.00    3987/8095        operator new(unsigned long, void*) [57]
+                0.00    0.00    3987/123077      Partido::Partido(Partido const&) [21]
+                0.00    0.00      13/13          std::vector<Partido, std::allocator<Partido> >::end() [104]
+                0.00    0.00      13/13          void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+-----------------------------------------------
+                0.00    0.00    4000/4000        void std::_Destroy_aux<false>::__destroy<Partido*>(Partido*, Partido*) [119]
+[75]     0.0    0.00    0.00    4000         void std::_Destroy<Partido>(Partido*) [75]
+                0.00    0.00    4000/131172      Partido::~Partido() [20]
+-----------------------------------------------
+                0.00    0.00    3995/3995        HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [69]
+[76]     0.0    0.00    0.00    3995         HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::getClave() [76]
+-----------------------------------------------
+                0.00    0.00    3995/3995        HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [69]
+[77]     0.0    0.00    0.00    3995         HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::getValor() [77]
+-----------------------------------------------
+                0.00    0.00    3995/3995        bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [79]
+[78]     0.0    0.00    0.00    3995         std::char_traits<char>::compare(char const*, char const*, unsigned long) [78]
+                0.00    0.00    3992/12771       std::__is_constant_evaluated() [51]
+-----------------------------------------------
+                0.00    0.00    3995/3995        HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [69]
+[79]     0.0    0.00    0.00    3995         bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [79]
+                0.00    0.00    3995/3995        std::char_traits<char>::compare(char const*, char const*, unsigned long) [78]
+-----------------------------------------------
+                0.00    0.00    2926/2926        NodoArbolAVL<Partido>::NodoArbolAVL(Partido) [5]
+[80]     0.0    0.00    0.00    2926         Partido::operator=(Partido const&) [80]
+                0.00    0.00    5852/5852        Equipo::operator=(Equipo const&) [62]
+-----------------------------------------------
+                0.00    0.00    2638/2638        ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[81]     0.0    0.00    0.00    2638         ArbolBinarioAVL<Partido>::rotacionIzquierda(NodoArbolAVL<Partido>*) [81]
+                0.00    0.00   10552/112588      ArbolBinarioAVL<Partido>::calculateHeight(NodoArbolAVL<Partido>*) [22]
+                0.00    0.00    7914/86876       NodoArbolAVL<Partido>::getRight() const [25]
+                0.00    0.00    7914/68360       NodoArbolAVL<Partido>::getLeft() const [28]
+                0.00    0.00    5276/31135       ArbolBinarioAVL<Partido>::max(int, int) [39]
+                0.00    0.00    5276/31135       NodoArbolAVL<Partido>::setHeight(int) [38]
+                0.00    0.00    2638/9302        NodoArbolAVL<Partido>::setLeft(NodoArbolAVL<Partido>*) [52]
+                0.00    0.00    2638/22154       NodoArbolAVL<Partido>::setRight(NodoArbolAVL<Partido>*) [43]
+-----------------------------------------------
+                0.00    0.00     350/350         ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[82]     0.0    0.00    0.00     350         ArbolBinarioAVL<Partido>::rotacionDerecha(NodoArbolAVL<Partido>*) [82]
+                0.00    0.00    1400/112588      ArbolBinarioAVL<Partido>::calculateHeight(NodoArbolAVL<Partido>*) [22]
+                0.00    0.00    1050/68360       NodoArbolAVL<Partido>::getLeft() const [28]
+                0.00    0.00    1050/86876       NodoArbolAVL<Partido>::getRight() const [25]
+                0.00    0.00     700/31135       NodoArbolAVL<Partido>::setHeight(int) [38]
+                0.00    0.00     700/31135       ArbolBinarioAVL<Partido>::max(int, int) [39]
+                0.00    0.00     350/22154       NodoArbolAVL<Partido>::setRight(NodoArbolAVL<Partido>*) [43]
+                0.00    0.00     350/9302        NodoArbolAVL<Partido>::setLeft(NodoArbolAVL<Partido>*) [52]
+-----------------------------------------------
+                0.00    0.00     350/350         ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [3]
+[83]     0.0    0.00    0.00     350         Partido::operator<(Partido const&) const [83]
+                0.00    0.00     405/80688       Partido::getGolesTotales() const [26]
+                0.00    0.00     295/51080       Partido::getFecha() const [30]
+                0.00    0.00     295/295         Fecha::operator<(Fecha const&) const [84]
+-----------------------------------------------
+                0.00    0.00     295/295         Partido::operator<(Partido const&) const [83]
+[84]     0.0    0.00    0.00     295         Fecha::operator<(Fecha const&) const [84]
+                0.00    0.00     590/53585       Fecha::getAnio() const [29]
+                0.00    0.00     530/36043       Fecha::getMes() const [34]
+                0.00    0.00     138/31369       Fecha::getDia() const [37]
+-----------------------------------------------
+                0.00    0.00      78/78          Partido* std::__relocate_a<Partido*, Partido*, std::allocator<Partido> >(Partido*, Partido*, Partido*, std::allocator<Partido>&) [94]
+[85]     0.0    0.00    0.00      78         Partido* std::__niter_base<Partido*>(Partido*) [85]
+-----------------------------------------------
+                0.00    0.00      26/52          void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+                0.00    0.00      26/52          __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::difference_type __gnu_cxx::operator-<Partido*, std::vector<Partido, std::allocator<Partido> > >(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > > const&, __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > > const&) [98]
+[86]     0.0    0.00    0.00      52         __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::base() const [86]
+-----------------------------------------------
+                0.00    0.00      52/52          std::vector<Partido, std::allocator<Partido> >::_M_check_len(unsigned long, char const*) const [99]
+[87]     0.0    0.00    0.00      52         std::vector<Partido, std::allocator<Partido> >::size() const [87]
+-----------------------------------------------
+                0.00    0.00       1/27          std::vector<Partido, std::allocator<Partido> >::~vector() [127]
+                0.00    0.00      26/27          void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+[88]     0.0    0.00    0.00      27         std::_Vector_base<Partido, std::allocator<Partido> >::_M_get_Tp_allocator() [88]
+-----------------------------------------------
+                0.00    0.00      13/26          std::vector<Partido, std::allocator<Partido> >::end() [104]
+                0.00    0.00      13/26          std::vector<Partido, std::allocator<Partido> >::begin() [105]
+[89]     0.0    0.00    0.00      26         __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::__normal_iterator(Partido* const&) [89]
+-----------------------------------------------
+                0.00    0.00      26/26          std::vector<Partido, std::allocator<Partido> >::max_size() const [91]
+[90]     0.0    0.00    0.00      26         std::_Vector_base<Partido, std::allocator<Partido> >::_M_get_Tp_allocator() const [90]
+-----------------------------------------------
+                0.00    0.00      26/26          std::vector<Partido, std::allocator<Partido> >::_M_check_len(unsigned long, char const*) const [99]
+[91]     0.0    0.00    0.00      26         std::vector<Partido, std::allocator<Partido> >::max_size() const [91]
+                0.00    0.00      26/26          std::vector<Partido, std::allocator<Partido> >::_S_max_size(std::allocator<Partido> const&) [92]
+                0.00    0.00      26/26          std::_Vector_base<Partido, std::allocator<Partido> >::_M_get_Tp_allocator() const [90]
+-----------------------------------------------
+                0.00    0.00      26/26          std::vector<Partido, std::allocator<Partido> >::max_size() const [91]
+[92]     0.0    0.00    0.00      26         std::vector<Partido, std::allocator<Partido> >::_S_max_size(std::allocator<Partido> const&) [92]
+                0.00    0.00      26/26          unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [96]
+-----------------------------------------------
+                0.00    0.00      26/26          void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+[93]     0.0    0.00    0.00      26         std::vector<Partido, std::allocator<Partido> >::_S_relocate(Partido*, Partido*, Partido*, std::allocator<Partido>&) [93]
+                0.00    0.00      26/26          Partido* std::__relocate_a<Partido*, Partido*, std::allocator<Partido> >(Partido*, Partido*, Partido*, std::allocator<Partido>&) [94]
+-----------------------------------------------
+                0.00    0.00      26/26          std::vector<Partido, std::allocator<Partido> >::_S_relocate(Partido*, Partido*, Partido*, std::allocator<Partido>&) [93]
+[94]     0.0    0.00    0.00      26         Partido* std::__relocate_a<Partido*, Partido*, std::allocator<Partido> >(Partido*, Partido*, Partido*, std::allocator<Partido>&) [94]
+                0.00    0.00      78/78          Partido* std::__niter_base<Partido*>(Partido*) [85]
+                0.00    0.00      26/26          Partido* std::__relocate_a_1<Partido*, Partido*, std::allocator<Partido> >(Partido*, Partido*, Partido*, std::allocator<Partido>&) [95]
+-----------------------------------------------
+                0.00    0.00      26/26          Partido* std::__relocate_a<Partido*, Partido*, std::allocator<Partido> >(Partido*, Partido*, Partido*, std::allocator<Partido>&) [94]
+[95]     0.0    0.00    0.00      26         Partido* std::__relocate_a_1<Partido*, Partido*, std::allocator<Partido> >(Partido*, Partido*, Partido*, std::allocator<Partido>&) [95]
+                0.00    0.00    8190/16285       Partido* std::__addressof<Partido>(Partido&) [49]
+                0.00    0.00    4095/4095        void std::__relocate_object_a<Partido, Partido, std::allocator<Partido> >(Partido*, Partido*, std::allocator<Partido>&) [64]
+-----------------------------------------------
+                0.00    0.00      26/26          std::vector<Partido, std::allocator<Partido> >::_S_max_size(std::allocator<Partido> const&) [92]
+[96]     0.0    0.00    0.00      26         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [96]
+-----------------------------------------------
+                0.00    0.00       1/14          std::_Vector_base<Partido, std::allocator<Partido> >::~_Vector_base() [124]
+                0.00    0.00      13/14          void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+[97]     0.0    0.00    0.00      14         std::_Vector_base<Partido, std::allocator<Partido> >::_M_deallocate(Partido*, unsigned long) [97]
+                0.00    0.00      13/13          std::__new_allocator<Partido>::deallocate(Partido*, unsigned long) [101]
+-----------------------------------------------
+                0.00    0.00      13/13          void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+[98]     0.0    0.00    0.00      13         __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::difference_type __gnu_cxx::operator-<Partido*, std::vector<Partido, std::allocator<Partido> > >(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > > const&, __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > > const&) [98]
+                0.00    0.00      26/52          __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::base() const [86]
+-----------------------------------------------
+                0.00    0.00      13/13          void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+[99]     0.0    0.00    0.00      13         std::vector<Partido, std::allocator<Partido> >::_M_check_len(unsigned long, char const*) const [99]
+                0.00    0.00      52/52          std::vector<Partido, std::allocator<Partido> >::size() const [87]
+                0.00    0.00      26/26          std::vector<Partido, std::allocator<Partido> >::max_size() const [91]
+                0.00    0.00      13/13          unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [106]
+-----------------------------------------------
+                0.00    0.00      13/13          void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+[100]    0.0    0.00    0.00      13         std::_Vector_base<Partido, std::allocator<Partido> >::_M_allocate(unsigned long) [100]
+                0.00    0.00      13/13          std::__new_allocator<Partido>::allocate(unsigned long, void const*) [102]
+-----------------------------------------------
+                0.00    0.00      13/13          std::_Vector_base<Partido, std::allocator<Partido> >::_M_deallocate(Partido*, unsigned long) [97]
+[101]    0.0    0.00    0.00      13         std::__new_allocator<Partido>::deallocate(Partido*, unsigned long) [101]
+-----------------------------------------------
+                0.00    0.00      13/13          std::_Vector_base<Partido, std::allocator<Partido> >::_M_allocate(unsigned long) [100]
+[102]    0.0    0.00    0.00      13         std::__new_allocator<Partido>::allocate(unsigned long, void const*) [102]
+-----------------------------------------------
+                0.00    0.00      13/13          std::vector<Partido, std::allocator<Partido> >::push_back(Partido const&) [74]
+[103]    0.0    0.00    0.00      13         void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+                0.00    0.00      39/8013        Partido const& std::forward<Partido const&>(std::remove_reference<Partido const&>::type&) [58]
+                0.00    0.00      26/27          std::_Vector_base<Partido, std::allocator<Partido> >::_M_get_Tp_allocator() [88]
+                0.00    0.00      26/52          __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::base() const [86]
+                0.00    0.00      26/26          std::vector<Partido, std::allocator<Partido> >::_S_relocate(Partido*, Partido*, Partido*, std::allocator<Partido>&) [93]
+                0.00    0.00      13/13          std::vector<Partido, std::allocator<Partido> >::_M_check_len(unsigned long, char const*) const [99]
+                0.00    0.00      13/13          std::vector<Partido, std::allocator<Partido> >::begin() [105]
+                0.00    0.00      13/13          __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::difference_type __gnu_cxx::operator-<Partido*, std::vector<Partido, std::allocator<Partido> > >(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > > const&, __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > > const&) [98]
+                0.00    0.00      13/13          std::_Vector_base<Partido, std::allocator<Partido> >::_M_allocate(unsigned long) [100]
+                0.00    0.00      13/8095        operator new(unsigned long, void*) [57]
+                0.00    0.00      13/123077      Partido::Partido(Partido const&) [21]
+                0.00    0.00      13/14          std::_Vector_base<Partido, std::allocator<Partido> >::_M_deallocate(Partido*, unsigned long) [97]
+-----------------------------------------------
+                0.00    0.00      13/13          std::vector<Partido, std::allocator<Partido> >::push_back(Partido const&) [74]
+[104]    0.0    0.00    0.00      13         std::vector<Partido, std::allocator<Partido> >::end() [104]
+                0.00    0.00      13/26          __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::__normal_iterator(Partido* const&) [89]
+-----------------------------------------------
+                0.00    0.00      13/13          void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&) [103]
+[105]    0.0    0.00    0.00      13         std::vector<Partido, std::allocator<Partido> >::begin() [105]
+                0.00    0.00      13/26          __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::__normal_iterator(Partido* const&) [89]
+-----------------------------------------------
+                0.00    0.00      13/13          std::vector<Partido, std::allocator<Partido> >::_M_check_len(unsigned long, char const*) const [99]
+[106]    0.0    0.00    0.00      13         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [106]
+-----------------------------------------------
+                0.00    0.00       5/10          ServicioPartidoTree::registrarPartidoEnHash(Partido) [4]
+                0.00    0.00       5/10          HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::HashEntry(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido>) [109]
+[107]    0.0    0.00    0.00      10         ArbolBinarioAVL<Partido>::ArbolBinarioAVL() [107]
+-----------------------------------------------
+                0.00    0.00       5/5           ServicioPartidoTree::registrarPartidoEnHash(Partido) [4]
+[108]    0.0    0.00    0.00       5         HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::put(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido>) [108]
+                0.00    0.00       5/4005        ServicioPartidoTree::hashCompeticion(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [67]
+                0.00    0.00       5/5           HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::HashEntry(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido>) [109]
+                0.00    0.00       5/4015        ArbolBinarioAVL<Partido>::~ArbolBinarioAVL() [66]
+-----------------------------------------------
+                0.00    0.00       5/5           HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::put(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido>) [108]
+[109]    0.0    0.00    0.00       5         HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::HashEntry(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido>) [109]
+                0.00    0.00       5/10          ArbolBinarioAVL<Partido>::ArbolBinarioAVL() [107]
+-----------------------------------------------
+                0.00    0.00       5/5           HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::~HashMap() [116]
+[110]    0.0    0.00    0.00       5         HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::~HashEntry() [110]
+                0.00    0.00       5/4015        ArbolBinarioAVL<Partido>::~ArbolBinarioAVL() [66]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<Partido, std::allocator<Partido> >::begin() const [118]
+                0.00    0.00       1/2           std::vector<Partido, std::allocator<Partido> >::end() const [117]
+[111]    0.0    0.00    0.00       2         __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::__normal_iterator(Partido const* const&) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[112]    0.0    0.00    0.00       1         leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [112]
+                0.00    0.00   20000/20000       std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int) [45]
+                0.00    0.00   16000/278344      Equipo::~Equipo() [18]
+                0.00    0.00    8000/8000        std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [60]
+                0.00    0.00    8000/13852       Equipo::Equipo(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [50]
+                0.00    0.00    8000/262154      Equipo::Equipo(Equipo const&) [19]
+                0.00    0.00    4000/6926        Fecha::Fecha(int, int, int) [61]
+                0.00    0.00    4000/4000        Partido::Partido(Equipo, Equipo, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Fecha) [70]
+                0.00    0.00    4000/4000        std::vector<Partido, std::allocator<Partido> >::push_back(Partido const&) [74]
+                0.00    0.00    4000/131172      Partido::~Partido() [20]
+                0.00    0.00       1/1           std::vector<Partido, std::allocator<Partido> >::vector() [126]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[113]    0.0    0.00    0.00       1         ServicioPartidoTree::ServicioPartidoTree(unsigned int) [113]
+                0.00    0.00       1/1           HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::HashMap(unsigned int, unsigned int (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)) [115]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[114]    0.0    0.00    0.00       1         ServicioPartidoTree::~ServicioPartidoTree() [114]
+                0.00    0.00       1/1           HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::~HashMap() [116]
+-----------------------------------------------
+                0.00    0.00       1/1           ServicioPartidoTree::ServicioPartidoTree(unsigned int) [113]
+[115]    0.0    0.00    0.00       1         HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::HashMap(unsigned int, unsigned int (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)) [115]
+-----------------------------------------------
+                0.00    0.00       1/1           ServicioPartidoTree::~ServicioPartidoTree() [114]
+[116]    0.0    0.00    0.00       1         HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::~HashMap() [116]
+                0.00    0.00       5/5           HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::~HashEntry() [110]
+-----------------------------------------------
+                0.00    0.00       1/1           registrarPartidosEnServicio(std::vector<Partido, std::allocator<Partido> > const&, ServicioPartidoTree&) [7]
+[117]    0.0    0.00    0.00       1         std::vector<Partido, std::allocator<Partido> >::end() const [117]
+                0.00    0.00       1/2           __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::__normal_iterator(Partido const* const&) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           registrarPartidosEnServicio(std::vector<Partido, std::allocator<Partido> > const&, ServicioPartidoTree&) [7]
+[118]    0.0    0.00    0.00       1         std::vector<Partido, std::allocator<Partido> >::begin() const [118]
+                0.00    0.00       1/2           __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::__normal_iterator(Partido const* const&) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<Partido*>(Partido*, Partido*) [128]
+[119]    0.0    0.00    0.00       1         void std::_Destroy_aux<false>::__destroy<Partido*>(Partido*, Partido*) [119]
+                0.00    0.00    4000/4000        void std::_Destroy<Partido>(Partido*) [75]
+                0.00    0.00    4000/16285       Partido* std::__addressof<Partido>(Partido&) [49]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_base() [123]
+[120]    0.0    0.00    0.00       1         std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl::_Vector_impl() [120]
+                0.00    0.00       1/1           std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl_data::_Vector_impl_data() [122]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Partido, std::allocator<Partido> >::~_Vector_base() [124]
+[121]    0.0    0.00    0.00       1         std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl::~_Vector_impl() [121]
+                0.00    0.00       1/1           std::__new_allocator<Partido>::~__new_allocator() [125]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl::_Vector_impl() [120]
+[122]    0.0    0.00    0.00       1         std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl_data::_Vector_impl_data() [122]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Partido, std::allocator<Partido> >::vector() [126]
+[123]    0.0    0.00    0.00       1         std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_base() [123]
+                0.00    0.00       1/1           std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl::_Vector_impl() [120]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Partido, std::allocator<Partido> >::~vector() [127]
+[124]    0.0    0.00    0.00       1         std::_Vector_base<Partido, std::allocator<Partido> >::~_Vector_base() [124]
+                0.00    0.00       1/14          std::_Vector_base<Partido, std::allocator<Partido> >::_M_deallocate(Partido*, unsigned long) [97]
+                0.00    0.00       1/1           std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl::~_Vector_impl() [121]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl::~_Vector_impl() [121]
+[125]    0.0    0.00    0.00       1         std::__new_allocator<Partido>::~__new_allocator() [125]
+-----------------------------------------------
+                0.00    0.00       1/1           leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [112]
+[126]    0.0    0.00    0.00       1         std::vector<Partido, std::allocator<Partido> >::vector() [126]
+                0.00    0.00       1/1           std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_base() [123]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[127]    0.0    0.00    0.00       1         std::vector<Partido, std::allocator<Partido> >::~vector() [127]
+                0.00    0.00       1/27          std::_Vector_base<Partido, std::allocator<Partido> >::_M_get_Tp_allocator() [88]
+                0.00    0.00       1/1           void std::_Destroy<Partido*>(Partido*, Partido*) [128]
+                0.00    0.00       1/1           std::_Vector_base<Partido, std::allocator<Partido> >::~_Vector_base() [124]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Partido, std::allocator<Partido> >::~vector() [127]
+[128]    0.0    0.00    0.00       1         void std::_Destroy<Partido*>(Partido*, Partido*) [128]
+                0.00    0.00       1/1           void std::_Destroy_aux<false>::__destroy<Partido*>(Partido*, Partido*) [119]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [7] registrarPartidosEnServicio(std::vector<Partido, std::allocator<Partido> > const&, ServicioPartidoTree&) [111] __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::__normal_iterator(Partido const* const&) [88] std::_Vector_base<Partido, std::allocator<Partido> >::_M_get_Tp_allocator()
+ [112] leerCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [71] __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::operator++() [123] std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_base()
+  [52] NodoArbolAVL<Partido>::setLeft(NodoArbolAVL<Partido>*) [32] __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator++() [124] std::_Vector_base<Partido, std::allocator<Partido> >::~_Vector_base()
+  [43] NodoArbolAVL<Partido>::setRight(NodoArbolAVL<Partido>*) [44] int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [101] std::__new_allocator<Partido>::deallocate(Partido*, unsigned long)
+  [23] NodoArbolAVL<Partido>::getHeight() [98] __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::difference_type __gnu_cxx::operator-<Partido*, std::vector<Partido, std::allocator<Partido> > >(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > > const&, __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > > const&) [102] std::__new_allocator<Partido>::allocate(unsigned long, void const*)
+  [38] NodoArbolAVL<Partido>::setHeight(int) [68] bool __gnu_cxx::operator!=<Partido const*, std::vector<Partido, std::allocator<Partido> > >(__gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > > const&, __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > > const&) [125] std::__new_allocator<Partido>::~__new_allocator()
+   [5] NodoArbolAVL<Partido>::NodoArbolAVL(Partido) [31] bool __gnu_cxx::operator!=<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [8] std::__new_allocator<char>::~__new_allocator()
+  [41] ArbolBinarioAVL<Partido>::getBalance(NodoArbolAVL<Partido>*) [27] NodoArbolAVL<Partido>::getData() const [92] std::vector<Partido, std::allocator<Partido> >::_S_max_size(std::allocator<Partido> const&)
+  [22] ArbolBinarioAVL<Partido>::calculateHeight(NodoArbolAVL<Partido>*) [28] NodoArbolAVL<Partido>::getLeft() const [93] std::vector<Partido, std::allocator<Partido> >::_S_relocate(Partido*, Partido*, Partido*, std::allocator<Partido>&)
+  [82] ArbolBinarioAVL<Partido>::rotacionDerecha(NodoArbolAVL<Partido>*) [25] NodoArbolAVL<Partido>::getRight() const [103] void std::vector<Partido, std::allocator<Partido> >::_M_realloc_insert<Partido const&>(__gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >, Partido const&)
+  [81] ArbolBinarioAVL<Partido>::rotacionIzquierda(NodoArbolAVL<Partido>*) [37] Fecha::getDia() const [104] std::vector<Partido, std::allocator<Partido> >::end()
+  [39] ArbolBinarioAVL<Partido>::max(int, int) [34] Fecha::getMes() const [105] std::vector<Partido, std::allocator<Partido> >::begin()
+   [2] ArbolBinarioAVL<Partido>::put(Partido) [29] Fecha::getAnio() const [74] std::vector<Partido, std::allocator<Partido> >::push_back(Partido const&)
+   [3] ArbolBinarioAVL<Partido>::put(Partido, NodoArbolAVL<Partido>*) [42] Fecha::operator==(Fecha const&) const [126] std::vector<Partido, std::allocator<Partido> >::vector()
+ [107] ArbolBinarioAVL<Partido>::ArbolBinarioAVL() [40] Fecha::operator>(Fecha const&) const [127] std::vector<Partido, std::allocator<Partido> >::~vector()
+  [66] ArbolBinarioAVL<Partido>::~ArbolBinarioAVL() [84] Fecha::operator<(Fecha const&) const [9] void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)
+  [67] ServicioPartidoTree::hashCompeticion(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [26] Partido::getGolesTotales() const [10] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+   [4] ServicioPartidoTree::registrarPartidoEnHash(Partido) [72] Partido::getLiga[abi:cxx11]() const [45] std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int)
+ [113] ServicioPartidoTree::ServicioPartidoTree(unsigned int) [30] Partido::getFecha() const [49] Partido* std::__addressof<Partido>(Partido&)
+ [114] ServicioPartidoTree::~ServicioPartidoTree() [36] Partido::operator==(Partido const&) const [85] Partido* std::__niter_base<Partido*>(Partido*)
+  [61] Fecha::Fecha(int, int, int) [35] Partido::operator>(Partido const&) const [94] Partido* std::__relocate_a<Partido*, Partido*, std::allocator<Partido> >(Partido*, Partido*, Partido*, std::allocator<Partido>&)
+  [55] Equipo::Equipo(Equipo&&) [83] Partido::operator<(Partido const&) const [95] Partido* std::__relocate_a_1<Partido*, Partido*, std::allocator<Partido> >(Partido*, Partido*, Partido*, std::allocator<Partido>&)
+  [50] Equipo::Equipo(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [86] __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::base() const [64] void std::__relocate_object_a<Partido, Partido, std::allocator<Partido> >(Partido*, Partido*, std::allocator<Partido>&)
+  [19] Equipo::Equipo(Equipo const&) [59] __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::base() const [51] std::__is_constant_evaluated()
+  [18] Equipo::~Equipo()      [73] __gnu_cxx::__normal_iterator<Partido const*, std::vector<Partido, std::allocator<Partido> > >::operator*() const [106] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  [62] Equipo::operator=(Equipo const&) [24] __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base() const [96] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  [69] HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [33] __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator*() const [65] std::remove_reference<Partido&>::type&& std::move<Partido&>(Partido&)
+ [108] HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::put(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido>) [90] std::_Vector_base<Partido, std::allocator<Partido> >::_M_get_Tp_allocator() const [56] Partido&& std::forward<Partido>(std::remove_reference<Partido>::type&)
+ [115] HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::HashMap(unsigned int, unsigned int (*)(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)) [99] std::vector<Partido, std::allocator<Partido> >::_M_check_len(unsigned long, char const*) const [58] Partido const& std::forward<Partido const&>(std::remove_reference<Partido const&>::type&)
+ [116] HashMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::~HashMap() [117] std::vector<Partido, std::allocator<Partido> >::end() const [75] void std::_Destroy<Partido>(Partido*)
+  [63] Partido::Partido(Partido&&) [87] std::vector<Partido, std::allocator<Partido> >::size() const [128] void std::_Destroy<Partido*>(Partido*, Partido*)
+  [70] Partido::Partido(Equipo, Equipo, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Fecha) [118] std::vector<Partido, std::allocator<Partido> >::begin() const [79] bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [21] Partido::Partido(Partido const&) [91] std::vector<Partido, std::allocator<Partido> >::max_size() const [60] std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+   [6] Partido::Partido()     [53] std::char_traits<char>::length(char const*) [46] __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Range_chk::_S_chk(long, std::integral_constant<bool, true>)
+  [20] Partido::~Partido()    [78] std::char_traits<char>::compare(char const*, char const*, unsigned long) [47] __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::_Save_errno()
+  [80] Partido::operator=(Partido const&) [119] void std::_Destroy_aux<false>::__destroy<Partido*>(Partido*, Partido*) [48] __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::~_Save_errno()
+  [76] HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::getClave() [100] std::_Vector_base<Partido, std::allocator<Partido> >::_M_allocate(unsigned long) [11] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::_Guard(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)
+  [77] HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::getValor() [120] std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl::_Vector_impl() [54] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::~_Guard()
+ [109] HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::HashEntry(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido>) [121] std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl::~_Vector_impl() [57] operator new(unsigned long, void*)
+ [110] HashEntry<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, ArbolBinarioAVL<Partido> >::~HashEntry() [97] std::_Vector_base<Partido, std::allocator<Partido> >::_M_deallocate(Partido*, unsigned long)
+  [89] __gnu_cxx::__normal_iterator<Partido*, std::vector<Partido, std::allocator<Partido> > >::__normal_iterator(Partido* const&) [122] std::_Vector_base<Partido, std::allocator<Partido> >::_Vector_impl_data::_Vector_impl_data()

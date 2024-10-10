@@ -1,20 +1,21 @@
 #include "../src/servicios/ServicioPartidoArbol.h"  // Incluye tu servicio para manejar partidos
 #include <iostream>
-#include <chrono>
+#include <ctime>
 #include <fstream>
 #include <sstream>
 #include <string>
-#include <random>
+#include <vector>
+#include <stdexcept>  // Para std::invalid_argument
 
-// Función para leer el archivo CSV y registrar los partidos en el servicio
-void leerCSVYRegistrarPartidos(const std::string& nombreArchivo, ServicioPartidoTree& servicio) {
+// Función para leer el archivo CSV y almacenar los partidos en un vector
+std::vector<Partido> leerCSV(const std::string& nombreArchivo) {
     std::ifstream archivo(nombreArchivo); // Abrir el archivo CSV
     std::string linea;
+    std::vector<Partido> partidos;  // Vector para almacenar partidos
 
     // Verificar si el archivo se abrió correctamente
     if (!archivo.is_open()) {
-        std::cerr << "Error al abrir el archivo: " << nombreArchivo << std::endl;
-        return;
+        throw std::runtime_error("Error al abrir el archivo: " + nombreArchivo);
     }
 
     // Omitir la primera línea (encabezados)
@@ -52,6 +53,7 @@ void leerCSVYRegistrarPartidos(const std::string& nombreArchivo, ServicioPartido
             int mes = std::stoi(mesStr);
             int anio = std::stoi(anioStr);
             Fecha fecha(dia, mes, anio);
+
             // Crear los equipos
             Equipo equipoLocalObj(equipoLocal);
             Equipo equipoVisitanteObj(equipoVisitante);
@@ -59,8 +61,8 @@ void leerCSVYRegistrarPartidos(const std::string& nombreArchivo, ServicioPartido
             // Crear el partido
             Partido partido(equipoLocalObj, equipoVisitanteObj, golesLocal, golesVisitante, competicion, fecha);
 
-            // Registrar el partido en el servicio
-            servicio.registrarPartidoEnHash(partido);
+            // Almacenar el partido en el vector
+            partidos.push_back(partido);
         } catch (const std::invalid_argument& e) {
             std::cerr << "Error al convertir goles o fecha en la línea: " << linea << std::endl;
             std::cerr << "Excepción: " << e.what() << std::endl;
@@ -71,30 +73,45 @@ void leerCSVYRegistrarPartidos(const std::string& nombreArchivo, ServicioPartido
     }
 
     archivo.close(); // Cerrar el archivo al terminar
+    return partidos; // Retornar el vector de partidos
 }
 
+// Función para registrar los partidos en el servicio a partir del vector
+void registrarPartidosEnServicio(const std::vector<Partido>& partidos, ServicioPartidoTree& servicio) {
+    for (const auto& partido : partidos) {
+        servicio.registrarPartidoEnHash(partido);
+    }
+}
 
 int main() {
+    std::vector<Partido> partidos = leerCSV("../data/datos.csv");
+
+    clock_t begin;
+
+    std::cout << "Comenzando a medir Tiempo\n" << std::endl;
+
+    begin = clock();
     try {
         // Crear un servicio para manejar partidos con un tamaño de hash adecuado
-        ServicioPartidoTree servicio(100);  // Ajusta el tamaño si necesitas manejar más datos
+        ServicioPartidoTree servicio(10);
 
-        // Medir el tiempo para registrar partidos desde el archivo CSV
-        auto startCSV = std::chrono::high_resolution_clock::now();
-
-        // Leer el archivo CSV y registrar los partidos
-        leerCSVYRegistrarPartidos("../data/datos.csv", servicio);
-
-        auto endCSV = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> tiempoCSV = endCSV - startCSV;
-        std::cout << "Tiempo de registro de partidos desde CSV: " << tiempoCSV.count() << " segundos" << std::endl;
-
-
-    } catch (int e) {
-        std::cerr << "Excepción capturada: " << e << std::endl;
+        // Leer el archivo CSV y almacenar los partidos en un vector
+        // Registrar los partidos en el servicio
+        registrarPartidosEnServicio(partidos, servicio);
+        std::vector<Partido> partidosLaLiga = servicio.getPartidos("Champions League").inorder();
+        std::cout<<"Partidos de La Liga: "<<std::endl;
+        for(const auto& partido : partidosLaLiga){
+            std::cout << partido.getEquipoLocal() << " vs " << partido.getEquipoVisitante() << " - " << partido.getGolesLocal() << " - " << partido.getGolesVisitante() << std::endl;
+        }
     } catch (const std::exception& e) {
-        std::cerr << "Excepción estándar capturada: " << e.what() << std::endl;
+        std::cerr << "Excepción capturada: " << e.what() << std::endl;
     }
 
+
+    clock_t end = clock();
+
+    double elapsed_secs = static_cast<double>(end - begin) / CLOCKS_PER_SEC;
+
+    std::cout << "Tiempo transcurrido: " << elapsed_secs << " segundos\n" << std::endl;
     return 0;
 }
