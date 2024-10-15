@@ -87,14 +87,14 @@ template <class K, class T>
 void HashMap<K, T>::put(K clave, T valor)
 {
   unsigned int pos = hashFuncP(clave) % tamanio;
-
   if (tabla[pos] != NULL)
   {
     //Manejar la Colision!!!!!!!
-    throw 409;
+    throw 410;
   }
 
-  tabla[pos] = new HashEntry<K, T>(clave, valor); //Corresponde a una fila en la tabla HASH
+  tabla[pos] = new HashEntry<K, T>(clave, valor);
+  //Corresponde a una fila en la tabla HASH
 }
 
 template <class K, class T>

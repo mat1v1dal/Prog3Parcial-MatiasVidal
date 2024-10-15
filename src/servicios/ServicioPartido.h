@@ -29,15 +29,17 @@ class ServicioPartido {
         void registrarPartidoEnHash(Partido partido){
             std::string competicion = partido.getLiga();
             int goles = partido.getGolesLocal() + partido.getGolesVisitante();
-            std::cout<<competicion<<std::endl;
-            try{
+            try {
                 competiciones.get(competicion).encolarPrioridad(partido, goles);
-            } catch (int e){
+            } catch (int e) {
                 ColaPrioridad<Partido> cola;
+                std::cout<< "Cola creada" << std::endl;
                 cola.encolarPrioridad(partido, goles);
                 competiciones.put(competicion, cola);
+                std::cout << "Cola guardada con éxito." << std::endl;
             }
-        };
+        }
+
 
         ColaPrioridad<Partido> getCola(std::string competicion){
             return competiciones.get(competicion);

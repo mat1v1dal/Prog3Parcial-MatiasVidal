@@ -1,5 +1,5 @@
-﻿Jornada,Fecha,Equipo Local,Goles Local,Goles Visitante,Equipo Visitante,Competicion
-Fase de grupos partido 1,18/9/2012,Malaga CF,3,0,Zenit,Champions League
+﻿Fase de grupos partido 1,18/9/2012,Malaga CF,3,0,Zenit,Champions League
+17,19/12/2015,West Bromwich Albion FC,1,2,AFC Bournemouth,Premier League
 Fase de grupos partido 1,18/9/2012,Real Madrid,3,2,Manchester City,Champions League
 Fase de grupos partido 1,18/9/2012,Milan,0,0,Anderlecht,Champions League
 Fase de grupos partido 1,18/9/2012,Dinamo Zagreb,0,2,Porto,Champions League
@@ -22,7 +22,7 @@ Fase de grupos partido 2,2/10/2012,Spartak Moskva,3,2,Celtic,Champions League
 Fase de grupos partido 2,2/10/2012,Benfica,0,2,Barcelona,Champions League
 Fase de grupos partido 2,2/10/2012,Cluj,1,2,Manchester United,Champions League
 Fase de grupos partido 2,2/10/2012,Galatasaray,0,2,Braga,Champions League
-Fase de grupos partido 2,2/10/2012,Nordsjælland,0,4,Chelsea,Champions League
+Fase de grupos partido 2,2/10/2012,Nordsjlland,0,4,Chelsea,Champions League
 Fase de grupos partido 2,3/10/2012,Ajax,1,4,Real Madrid,Champions League
 Fase de grupos partido 2,3/10/2012,Manchester City,1,1,Borussia Dortmund,Champions League
 Fase de grupos partido 2,3/10/2012,Anderlecht,0,3,Malaga CF,Champions League
@@ -102,9 +102,6 @@ Octavos de final (ida),13/2/2013,Shakhtar Donetsk,2,2,Borussia Dortmund,Champion
 Octavos de final (ida),19/2/2013,Arsenal,1,3,Bayern Munich,Champions League
 Octavos de final (ida),19/2/2013,Porto,1,0,Malaga CF,Champions League
 Octavos de final (ida),20/2/2013,Milan,2,0,Barcelona,Champions League
-Octavos de final (ida),20/2/2013,Galatasaray,1,1,Schalke 04,Champions League
-Octavos de final (vuelta),5/3/2013,Borussia Dortmund,3,0,Shakhtar Donetsk,Champions League
-Octavos de final (vuelta),5/3/2013,Manchester United,1,2,Real Madrid,Champions League
 Octavos de final (vuelta),6/3/2013,PSG,1,1,Valencia,Champions League
 Octavos de final (vuelta),6/3/2013,Juventus,2,0,Celtic,Champions League
 Octavos de final (vuelta),12/3/2013,Barcelona,4,0,Milan,Champions League
@@ -1802,7 +1799,6 @@ Final,28/5/2016,Real Madrid,1(5),1(3),Atletico de Madrid,Champions League
 17,19/12/2015,Southampton FC,0,2,Tottenham Hotspur FC,Premier League
 17,19/12/2015,Everton FC,2,3,Leicester City FC,Premier League
 17,19/12/2015,Stoke City FC,1,2,Crystal Palace FC,Premier League
-17,19/12/2015,West Bromwich Albion FC,1,2,AFC Bournemouth,Premier League
 17,19/12/2015,Newcastle United FC,1,1,Aston Villa FC,Premier League
 17,19/12/2015,Manchester United FC,1,2,Norwich City FC,Premier League
 17,19/12/2015,Chelsea FC,3,1,Sunderland AFC,Premier League

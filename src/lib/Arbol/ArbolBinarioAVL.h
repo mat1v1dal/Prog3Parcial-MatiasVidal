@@ -2,7 +2,7 @@
 #define U05_ARBOL_ARBOL_ARBOLBINARIOAVL_H_
 
 #include "NodoArbolAVL.h"
-
+#include <vector>
 template <class T>
 class ArbolBinarioAVL
 {
@@ -18,11 +18,11 @@ public:
 
   void remove(T data);
 
-  void preorder();
+  std::vector<T> preorder();
 
-  void inorder();
+  std::vector<T> inorder();
 
-  void postorder();
+  std::vector<T> postorder();
 
   ~ArbolBinarioAVL();
 
@@ -37,9 +37,9 @@ public:
 
 private:
   T search(T data, NodoArbolAVL<T> *r);
-  void preorder(NodoArbolAVL<T> *r);
-  void inorder(NodoArbolAVL<T> *r);
-  void postorder(NodoArbolAVL<T> *r);
+  void preorder(NodoArbolAVL<T> *r, std::vector<T> &vec);
+  void inorder(NodoArbolAVL<T> *r, std::vector<T> &vec);
+  void postorder(NodoArbolAVL<T> *r, std::vector<T> &vec);
 
   int max(int a, int b);
   int calculateHeight(NodoArbolAVL<T> *r);
@@ -292,70 +292,57 @@ bool ArbolBinarioAVL<T>::esVacio() { return root == nullptr; }
  * Recorre un árbol en preorden
  */
 template <class T>
-void ArbolBinarioAVL<T>::preorder()
-{
-  preorder(root);
-  std::cout << std::endl;
+std::vector<T> ArbolBinarioAVL<T>::preorder() {
+  std::vector<T> result;
+  preorder(root, result);
+  return result;
 }
 
 template <class T>
-void ArbolBinarioAVL<T>::preorder(NodoArbolAVL<T> *r)
-{
-  if (r == nullptr)
-  {
-    return;
+void ArbolBinarioAVL<T>::preorder(NodoArbolAVL<T> *r, std::vector<T> &vec) {
+  if (r != nullptr) {
+    vec.push_back(r->getData());
+    preorder(r->getLeft(), vec);
+    preorder(r->getRight(), vec);
   }
-
-  std::cout << r->getData() << " ";
-  preorder(r->getLeft());
-  preorder(r->getRight());
-}
-
-/**
- * Recorre un árbol en orden
- */
-template <class T>
-void ArbolBinarioAVL<T>::inorder()
-{
-  inorder(root);
-  std::cout << std::endl;
 }
 
 template <class T>
-void ArbolBinarioAVL<T>::inorder(NodoArbolAVL<T> *r)
-{
-  if (r == nullptr)
-  {
-    return;
+std::vector<T> ArbolBinarioAVL<T>::inorder() {
+  std::vector<T> result;
+  inorder(root, result);
+  return result;
+}
+
+template <class T>
+void ArbolBinarioAVL<T>::inorder(NodoArbolAVL<T> *r, std::vector<T> &vec) {
+  if (r != nullptr) {
+    inorder(r->getLeft(), vec);
+    vec.push_back(r->getData());
+    inorder(r->getRight(), vec);
   }
+}
 
-  inorder(r->getLeft());
-  std::cout << r->getData() << " ";
-  inorder(r->getRight());
+template <class T>
+std::vector<T> ArbolBinarioAVL<T>::postorder() {
+  std::vector<T> result;
+  postorder(root, result);
+  return result;
+}
+
+template <class T>
+void ArbolBinarioAVL<T>::postorder(NodoArbolAVL<T> *r, std::vector<T> &vec) {
+  if (r != nullptr) {
+    postorder(r->getLeft(), vec);
+    postorder(r->getRight(), vec);
+    vec.push_back(r->getData());
+  }
 }
 
 /**
  * Recorre un árbol en postorden
  */
-template <class T>
-void ArbolBinarioAVL<T>::postorder()
-{
-  postorder(root);
-  std::cout << std::endl;
-}
 
-template <class T>
-void ArbolBinarioAVL<T>::postorder(NodoArbolAVL<T> *r)
-{
-  if (r == nullptr)
-  {
-    return;
-  }
-
-  postorder(r->getLeft());
-  postorder(r->getRight());
-  std::cout << r->getData() << " ";
-}
 
 /**
  * Muestra un árbol por consola
