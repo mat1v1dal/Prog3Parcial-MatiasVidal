@@ -99,10 +99,7 @@ int main() {
         // Registrar los partidos en el servicio
         registrarPartidosEnServicio(partidos, servicio);
         std::vector<Partido> partidosLaLiga = servicio.getPartidos("Premier League").inorder();
-        std::cout<<"Partidos de La Liga: "<<std::endl;
-        for(const auto& partido : partidosLaLiga){
-            std::cout << partido.getEquipoLocal() << " vs " << partido.getEquipoVisitante() << " - " << partido.getGolesLocal() << " - " << partido.getGolesVisitante() << std::endl;
-        }
+        
     } catch (const std::exception& e) {
         std::cerr << "Excepción capturada: " << e.what() << std::endl;
     }

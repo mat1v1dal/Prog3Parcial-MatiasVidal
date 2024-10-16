@@ -32,6 +32,24 @@ class Equipo{
             return derrotas;
         };
 
+        void registrarVictoria(){
+            victorias++;
+            partidosJugados++;
+        };
+        void registrarDerrota(){
+            derrotas++;
+            partidosJugados++;
+        };
+        void registrarEmpate(){
+            empates++;
+            partidosJugados++;
+        };
+        void aumentarGolesAFavor(int goles){
+            golesAFavor += goles;
+        };
+        void aumentarGolesEnContra(int goles){
+            golesEnContra += goles;
+        };
         // Métodos para cálculos adicionales
         float obtenerPromedioGolesAFavor() const;
         float obtenerPromedioGolesEnContra() const;

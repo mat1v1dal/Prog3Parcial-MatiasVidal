@@ -16,6 +16,12 @@ class Partido{
             liga(liga),
             fecha(fechaPartido) {}
 
+        Equipo getEquipoLocalObj() const {
+            return equipoLocal;
+        };
+        Equipo getEquipoVisitanteObj() const {
+            return equipoVisitante;
+        };
 
         std::string getEquipoLocal() const {
             return equipoLocal.getNombre();
