@@ -78,7 +78,9 @@ std::vector<Partido> leerCSV(const std::string& nombreArchivo) {
 
 // Función para registrar los partidos en el servicio a partir del vector
 void registrarPartidosEnServicio(const std::vector<Partido>& partidos, ServicioPartidoTree& servicio) {
-    for (const auto& partido : partidos) {
+    for (auto& partido : partidos) {
+        servicio.actualizarEquipos(partido);
+        servicio.registrarEquipo(partido.getLiga(), partido.getEquipoLocal());
         servicio.registrarPartidoEnHash(partido);
     }
 }
@@ -99,7 +101,7 @@ int main() {
         // Registrar los partidos en el servicio
         registrarPartidosEnServicio(partidos, servicio);
         std::vector<Partido> partidosLaLiga = servicio.getPartidos("Premier League").inorder();
-        
+
     } catch (const std::exception& e) {
         std::cerr << "Excepción capturada: " << e.what() << std::endl;
     }
