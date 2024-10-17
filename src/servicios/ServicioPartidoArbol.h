@@ -11,16 +11,17 @@
 #include <iostream>
 #include <vector>
 
+unsigned int hashCompeticion(std::string competicion) {
+    unsigned int hash = 0;
+    for (char c : competicion) {
+        hash += c;
+    }
+    return hash;
+}
+
 class ServicioPartidoTree {
     private:
         // Cambiar a función estática o libre para usarla como hash
-        static unsigned int hashCompeticion(std::string competicion) {
-            unsigned int hash = 0;
-            for (char c : competicion) {
-                hash += c;
-            }
-            return hash;  // Asegurarse de que retorne un valor
-        }
 
         // Corregir el tipo de HashMapList
         HashMap<std::string, ArbolBinarioAVL<Partido>> competiciones;
@@ -34,8 +35,13 @@ class ServicioPartidoTree {
                 equipos.get(liga).put(equipo.getNombre(), equipo);
             } catch(int e){
                 if(e == 404){
-                    HashMap<std::string, Equipo> equiposLiga(10, hashCompeticion);
+                    HashMap<std::string, Equipo> equiposLiga(100, hashCompeticion);
+                    equiposLiga.put(equipo.getNombre(), equipo);
                     equipos.put(liga, equiposLiga);
+                }
+                if(e == 410){
+                    equipos.get(liga).get(equipo.getNombre()).aumentarGolesAFavor(equipo.getGolesAFavor());
+                    equipos.get(liga).get(equipo.getNombre()).aumentarGolesEnContra(equipo.getGolesEnContra());
                 }
             }
         }
@@ -59,18 +65,28 @@ class ServicioPartidoTree {
              }
         }
 
-        void actualizarEquipos(const Partido& partido) {
-            std::string equipoLocal = partido.getEquipoLocal();
-            std::string equipoVisitante = partido.getEquipoVisitante();
-
+        void cargarResultados(Partido& partido) {
             int golesLocal = partido.getGolesLocal();
             int golesVisitante = partido.getGolesVisitante();
 
+            // Modificar los equipos directamente, ya que estamos trabajando con referencias
             partido.getEquipoLocalObj().aumentarGolesAFavor(golesLocal);
             partido.getEquipoLocalObj().aumentarGolesEnContra(golesVisitante);
 
             partido.getEquipoVisitanteObj().aumentarGolesAFavor(golesVisitante);
             partido.getEquipoVisitanteObj().aumentarGolesEnContra(golesLocal);
+        }
+
+        Equipo getEquipo(const std::string& competicion, const std::string& equipoNombre){
+            try {
+                return equipos.get(competicion).get(equipoNombre);  // Devuelve una copia
+            } catch (int e) {
+                if (e == 404) {
+                    throw std::runtime_error("Equipo no encontrado en la competición.");
+                } else {
+                    throw std::runtime_error("Error al intentar obtener el equipo.");
+                }
+            }
         }
 
         ArbolBinarioAVL<Partido> getPartidos(std::string competicion){

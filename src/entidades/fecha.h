@@ -1,3 +1,6 @@
+#ifndef FECHA_H
+#define FECHA_H
+#include <string>
 class Fecha {
 private:
     int dia;
@@ -10,6 +13,11 @@ public:
     int getDia() const {
         return dia;
     }
+
+    std::string toString(){
+        return std::to_string(dia) + "/" + std::to_string(mes) + "/" + std::to_string(anio);
+    }
+
     int getMes() const {
         return mes;
     }
@@ -60,3 +68,5 @@ public:
         return false;
     }
 };
+
+#endif

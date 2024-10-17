@@ -65,22 +65,7 @@ public:
     height = h;
   }
 
-  void print(bool esDerecho, string identacion) {
-    if (right != NULL) {
-        right->print(true, identacion + (esDerecho ? "     " : "|    "));
-    }
-    cout << identacion;
-    if (esDerecho) {
-        cout << " /";
-    } else {
-        cout << " \\";
-    }
-    cout << "-- ";
-    cout << data << endl;
-    if (left != NULL) {
-        left->print(false, identacion + (esDerecho ? "|    " : "     "));
-    }
-}
+
 
 };
 

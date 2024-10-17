@@ -16,10 +16,10 @@ class Partido{
             liga(liga),
             fecha(fechaPartido) {}
 
-        Equipo getEquipoLocalObj() const {
+        Equipo& getEquipoLocalObj() {
             return equipoLocal;
         };
-        Equipo getEquipoVisitanteObj() const {
+        Equipo& getEquipoVisitanteObj() {
             return equipoVisitante;
         };
 
@@ -54,25 +54,40 @@ class Partido{
             }
         }
 
-        bool operator<(const Partido& partido) const {
-            if (golesLocal + golesVisitante == partido.getGolesTotales()) {
-                return fecha < partido.getFecha();
+    bool operator<(const Partido& partido) const {
+        if (golesLocal + golesVisitante == partido.getGolesTotales()) {
+            if (fecha == partido.getFecha()) {
+                if (equipoLocal.getNombre() == partido.getEquipoLocal()) {
+                    return equipoVisitante.getNombre() < partido.getEquipoVisitante(); // Compara el equipo visitante si todo lo demás es igual
+                }
+                return equipoLocal.getNombre() < partido.getEquipoLocal(); // Compara el equipo local si las fechas son iguales
             }
-            return golesLocal + golesVisitante < partido.getGolesTotales();
+            return fecha < partido.getFecha();
         }
+        return golesLocal + golesVisitante < partido.getGolesTotales();
+    }
 
-        // Sobrecarga de operador >
-        bool operator>(const Partido& partido) const {
-            if (golesLocal + golesVisitante == partido.getGolesTotales()) {
-                return fecha > partido.getFecha();
+    // Sobrecarga de operador >
+    bool operator>(const Partido& partido) const {
+        if (golesLocal + golesVisitante == partido.getGolesTotales()) {
+            if (fecha == partido.getFecha()) {
+                if (equipoLocal.getNombre() == partido.getEquipoLocal()) {
+                    return equipoVisitante.getNombre() > partido.getEquipoVisitante(); // Compara el equipo visitante si todo lo demás es igual
+                }
+                return equipoLocal.getNombre() > partido.getEquipoLocal(); // Compara el equipo local si las fechas son iguales
             }
-            return golesLocal + golesVisitante > partido.getGolesTotales();
+            return fecha > partido.getFecha();
         }
+        return golesLocal + golesVisitante > partido.getGolesTotales();
+    }
 
-        // Sobrecarga de operador ==
-        bool operator==(const Partido& partido) const {
-            return golesLocal + golesVisitante == partido.getGolesTotales() && fecha == partido.getFecha();
-        }
+    // Sobrecarga de operador ==
+    bool operator==(const Partido& partido) const {
+        return golesLocal + golesVisitante == partido.getGolesTotales() 
+            && fecha == partido.getFecha() 
+            && equipoLocal.getNombre() == partido.getEquipoLocal() 
+            && equipoVisitante.getNombre() == partido.getEquipoVisitante();
+    }
 
 
     private:

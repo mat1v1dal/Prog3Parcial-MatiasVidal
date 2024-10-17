@@ -20,6 +20,6 @@ class ServicioEquipo{
             }
             grafo.agregarArista(equipo1, equipo2);
         }
-}
+};
 
 #endif
